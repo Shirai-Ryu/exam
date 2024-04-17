@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Overlay</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;  /* Prevent scrolling */
+        }
+
+        .section-container {
+            position: relative;
+            width: 100%;  /* Use 100% to fit the browser width */
+            height: calc(100vh - 100px);  /* Adjusting height to consider browser chrome */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  /* Ensure the image covers the section */
+            z-index: 1;
+        }
+
+        button.login-button {
+            position: absolute;
+            width: 222px;  /* Adjust width as needed */
+            padding: 10px;
+            font-size: 24px;
+            background-color: #ffa500;
+            color: black;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        /* Adjust button positions to be more flexible for browser view */
+        #login1 { top: 780%; left: 345%; } /* Example relative positions */
+        #login2 { top: 780%; left: 610%; }
+        #login3 { top: 780%; left: 875%; }
+    </style>
+</head>
+<body>
+    <div class="section-container">
+        <img src="https://cdn.builder.io/api/v1/image/assets%2F7c37f6151f7145068e61059a75405216%2Fe1b758872f234f008e1f092707b010a6" alt="Background Image" class="background-image">
+        <button id="login1" class="login-button">LOGIN</button>
+        <button id="login2" class="login-button">LOGIN</button>
+        <button id="login3" class="login-button">LOGIN</button>
+    </div>
+</body>
+</html>
