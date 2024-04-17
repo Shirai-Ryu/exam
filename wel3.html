@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Positions</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-background {
+            position: relative;
+            width: 100%;
+            max-width: 1105px; /* Set the width of the image */
+            height: 1024px; /* Set the height of the image */
+            background: url('https://cdn.builder.io/api/v1/image/assets%2F7c37f6151f7145068e61059a75405216%2Fe1b758872f234f008e1f092707b010a6') no-repeat center center;
+            background-size: cover;
+        }
+
+        button.login-button {
+            position: absolute;
+            padding: 10px 20px;
+            font-size: 24px;
+            color: #000;
+            background-color: #f90;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        #login1 { top: 820px; left: 150px; } /* Adjust these values based on actual image analysis */
+        #login2 { top: 820px; left: 450px; } /* Adjust these values based on actual image analysis */
+        #login3 { top: 820px; left: 750px; } /* Adjust these values based on actual image analysis */
+    </style>
+</head>
+<body>
+    <div class="login-background">
+        <button id="login1" class="login-button">LOGIN</button>
+        <button id="login2" class="login-button">LOGIN</button>
+        <button id="login3" class="login-button">LOGIN</button>
+    </div>
+</body>
+</html>
+
